@@ -21,7 +21,7 @@ public class Multithread {
         Semaphore semaphore = new Semaphore(1);
         
         new Thread(new thread1(semaphore,"thread1")).start();
-        new Thread(new thread2(semaphore, "thread2")).start();;
+        new Thread(new thread2(semaphore, "thread")).start();;
         
     }
     
