@@ -26,7 +26,7 @@ public class UseThread implements Runnable{
     public void run() {
         for(int i = 0; i<3; i++){
         try {
-            str = ex.exchange(new String());
+            str = ex.exchange(new String("123"));
             System.out.println(str);
         } catch (InterruptedException ex) {
             Logger.getLogger(UseThread.class.getName()).log(Level.SEVERE, null, ex);
